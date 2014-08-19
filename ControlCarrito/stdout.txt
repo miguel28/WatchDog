@@ -1,0 +1,17 @@
+Device Found
+  type: 1234 0033
+  path: \\?\hid#vid_1234&pid_0033#6&1e2df6b&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+  serial_number: 
+  Manufacturer: MASTER-PROG+  2009      .
+  Product:      MASTER-PROG+ 2009                  
+
+Device Found
+  type: 3995 0001
+  path: \\?\hid#vid_3995&pid_0001#6&25571a92&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+  serial_number: 
+  Manufacturer: Miguel Silva
+  Product:      Virtual PLC Terminal
+
+Manufacturer String: Miguel Silva
+Product String: Virtual PLC Terminal
+Serial String: 

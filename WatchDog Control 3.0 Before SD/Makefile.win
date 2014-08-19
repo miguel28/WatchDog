@@ -1,0 +1,114 @@
+# Project: WatchDog Control
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = WatchDog_Control_private.res
+OBJ  = main.o glm/glm.o glm/glm_util.o glm/glmimg.o glm/glmimg_devil.o glm/glmimg_jpg.o glm/glmimg_png.o glm/glmimg_sdl.o glm/glmimg_sim.o glTools/GLee.o glTools/gltools.o glTools/math3d.o MKGL/MK_Camera.o MKGL/MK_Materials.o MKGL/MK_Primitives.o MKGL/MK_Shader.o MKGL/MK_Text.o MKGL/MK_Texture.o USBInterface/USBInterfaceClass.o MKGL/MK_Mesh/MK_Models.o MKGL/MK_Image.o MKGL/MK_Input.o MKGL/MK_GLFWApp.o MKGL/MK_Math.o Controls.o GridHandler.o Scene.o WatchDog.o $(RES)
+LINKOBJ  = main.o glm/glm.o glm/glm_util.o glm/glmimg.o glm/glmimg_devil.o glm/glmimg_jpg.o glm/glmimg_png.o glm/glmimg_sdl.o glm/glmimg_sim.o glTools/GLee.o glTools/gltools.o glTools/math3d.o MKGL/MK_Camera.o MKGL/MK_Materials.o MKGL/MK_Primitives.o MKGL/MK_Shader.o MKGL/MK_Text.o MKGL/MK_Texture.o USBInterface/USBInterfaceClass.o MKGL/MK_Mesh/MK_Models.o MKGL/MK_Image.o MKGL/MK_Input.o MKGL/MK_GLFWApp.o MKGL/MK_Math.o Controls.o GridHandler.o Scene.o WatchDog.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib" -lmingw32  -lSDL -lSDL_image -lglfw -lglfwdll -lglut32 -lglut -lglu32 -mwindows -lopengl32 -lhidapi  
+INCS =  -I"C:/Dev-Cpp/include" 
+CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include" 
+BIN  = "WatchDog Control.exe"
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before "WatchDog Control.exe" all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "WatchDog Control.exe" $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+glm/glm.o: glm/glm.c
+	$(CPP) -c glm/glm.c -o glm/glm.o $(CXXFLAGS)
+
+glm/glm_util.o: glm/glm_util.c
+	$(CPP) -c glm/glm_util.c -o glm/glm_util.o $(CXXFLAGS)
+
+glm/glmimg.o: glm/glmimg.c
+	$(CPP) -c glm/glmimg.c -o glm/glmimg.o $(CXXFLAGS)
+
+glm/glmimg_devil.o: glm/glmimg_devil.c
+	$(CPP) -c glm/glmimg_devil.c -o glm/glmimg_devil.o $(CXXFLAGS)
+
+glm/glmimg_jpg.o: glm/glmimg_jpg.c
+	$(CPP) -c glm/glmimg_jpg.c -o glm/glmimg_jpg.o $(CXXFLAGS)
+
+glm/glmimg_png.o: glm/glmimg_png.c
+	$(CPP) -c glm/glmimg_png.c -o glm/glmimg_png.o $(CXXFLAGS)
+
+glm/glmimg_sdl.o: glm/glmimg_sdl.c
+	$(CPP) -c glm/glmimg_sdl.c -o glm/glmimg_sdl.o $(CXXFLAGS)
+
+glm/glmimg_sim.o: glm/glmimg_sim.c
+	$(CPP) -c glm/glmimg_sim.c -o glm/glmimg_sim.o $(CXXFLAGS)
+
+glTools/GLee.o: glTools/GLee.c
+	$(CPP) -c glTools/GLee.c -o glTools/GLee.o $(CXXFLAGS)
+
+glTools/gltools.o: glTools/gltools.cpp
+	$(CPP) -c glTools/gltools.cpp -o glTools/gltools.o $(CXXFLAGS)
+
+glTools/math3d.o: glTools/math3d.cpp
+	$(CPP) -c glTools/math3d.cpp -o glTools/math3d.o $(CXXFLAGS)
+
+MKGL/MK_Camera.o: MKGL/MK_Camera.cpp
+	$(CPP) -c MKGL/MK_Camera.cpp -o MKGL/MK_Camera.o $(CXXFLAGS)
+
+MKGL/MK_Materials.o: MKGL/MK_Materials.cpp
+	$(CPP) -c MKGL/MK_Materials.cpp -o MKGL/MK_Materials.o $(CXXFLAGS)
+
+MKGL/MK_Primitives.o: MKGL/MK_Primitives.cpp
+	$(CPP) -c MKGL/MK_Primitives.cpp -o MKGL/MK_Primitives.o $(CXXFLAGS)
+
+MKGL/MK_Shader.o: MKGL/MK_Shader.cpp
+	$(CPP) -c MKGL/MK_Shader.cpp -o MKGL/MK_Shader.o $(CXXFLAGS)
+
+MKGL/MK_Text.o: MKGL/MK_Text.cpp
+	$(CPP) -c MKGL/MK_Text.cpp -o MKGL/MK_Text.o $(CXXFLAGS)
+
+MKGL/MK_Texture.o: MKGL/MK_Texture.cpp
+	$(CPP) -c MKGL/MK_Texture.cpp -o MKGL/MK_Texture.o $(CXXFLAGS)
+
+USBInterface/USBInterfaceClass.o: USBInterface/USBInterfaceClass.cpp
+	$(CPP) -c USBInterface/USBInterfaceClass.cpp -o USBInterface/USBInterfaceClass.o $(CXXFLAGS)
+
+MKGL/MK_Mesh/MK_Models.o: MKGL/MK_Mesh/MK_Models.cpp
+	$(CPP) -c MKGL/MK_Mesh/MK_Models.cpp -o MKGL/MK_Mesh/MK_Models.o $(CXXFLAGS)
+
+MKGL/MK_Image.o: MKGL/MK_Image.cpp
+	$(CPP) -c MKGL/MK_Image.cpp -o MKGL/MK_Image.o $(CXXFLAGS)
+
+MKGL/MK_Input.o: MKGL/MK_Input.cpp
+	$(CPP) -c MKGL/MK_Input.cpp -o MKGL/MK_Input.o $(CXXFLAGS)
+
+MKGL/MK_GLFWApp.o: MKGL/MK_GLFWApp.cpp
+	$(CPP) -c MKGL/MK_GLFWApp.cpp -o MKGL/MK_GLFWApp.o $(CXXFLAGS)
+
+MKGL/MK_Math.o: MKGL/MK_Math.cpp
+	$(CPP) -c MKGL/MK_Math.cpp -o MKGL/MK_Math.o $(CXXFLAGS)
+
+Controls.o: Controls.cpp
+	$(CPP) -c Controls.cpp -o Controls.o $(CXXFLAGS)
+
+GridHandler.o: GridHandler.cpp
+	$(CPP) -c GridHandler.cpp -o GridHandler.o $(CXXFLAGS)
+
+Scene.o: Scene.cpp
+	$(CPP) -c Scene.cpp -o Scene.o $(CXXFLAGS)
+
+WatchDog.o: WatchDog.cpp
+	$(CPP) -c WatchDog.cpp -o WatchDog.o $(CXXFLAGS)
+
+WatchDog_Control_private.res: WatchDog_Control_private.rc 
+	$(WINDRES) -i WatchDog_Control_private.rc --input-format=rc -o WatchDog_Control_private.res -O coff 

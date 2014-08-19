@@ -1,0 +1,42 @@
+# Blender MTL File: 'rocks.blend'
+# Material Count: 4
+newmtl None_Scrapyard0096.png
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd Scrapyard0096.png
+
+
+newmtl None_Scrapyard0100.png
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd Scrapyard0100.png
+
+
+newmtl None_Scrapyard0102.png
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd Scrapyard0102.png
+
+
+newmtl None_rock.png
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd rock.png
+
+

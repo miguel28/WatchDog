@@ -1,0 +1,23 @@
+/* THIS FILE WILL BE OVERWRITTEN BY DEV-C++ */
+/* DO NOT EDIT ! */
+
+#ifndef WATCHDOG_CONTROL_PRIVATE_H
+#define WATCHDOG_CONTROL_PRIVATE_H
+
+/* VERSION DEFINITIONS */
+#define VER_STRING	"3.1.1.1"
+#define VER_MAJOR	3
+#define VER_MINOR	1
+#define VER_RELEASE	1
+#define VER_BUILD	1
+#define COMPANY_NAME	"Miguel Silva"
+#define FILE_VERSION	"Beta 2"
+#define FILE_DESCRIPTION	"Watchdog  3.0 Main Controls"
+#define INTERNAL_NAME	""
+#define LEGAL_COPYRIGHT	"ITCJ"
+#define LEGAL_TRADEMARKS	"ITCJ"
+#define ORIGINAL_FILENAME	"Watchdog  3.0"
+#define PRODUCT_NAME	"Watchdog  3.0"
+#define PRODUCT_VERSION	"3.0.2"
+
+#endif /*WATCHDOG_CONTROL_PRIVATE_H*/
